@@ -1,0 +1,36 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 80%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+nav ul {
+    margin: auto;
+    padding: 3px 0px 11px 0px;
+    text-align: center;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    opacity: 80%;
+    font-size: large;
+}
+
+nav a:hover {
+    opacity: 100%;
+}
+
+h2 {
+    text-align: center;
+}
