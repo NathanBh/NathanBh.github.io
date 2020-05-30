@@ -5,26 +5,27 @@
     top: 0px;
     left: 0px;
     opacity: 80%;
+
 }
 
 nav li {
-    display: inline;
+
     margin-right: 60px;
     margin-left: 60px;
 }
 
 nav ul {
-    margin: auto;
     padding: 3px 0px 11px 0px;
-    text-align: center;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     opacity: 80%;
-    font-size: large;
 }
 
 nav a:hover {
@@ -33,4 +34,28 @@ nav a:hover {
 
 h2 {
     text-align: center;
+}
+
+#Projects{
+display: grid;
+width:  100%;
+height: 2000px;
+grid-template-columns: auto-fit;
+grid-template-rows: repeat(5,auto);
+}
+
+#Project1{
+    background:PaleGreen;
+}
+#Project2{
+    background:orange;
+}
+#Project3{
+    background:purple;
+}
+#Project4{
+    background:blue;
+}
+#Project5{
+    background: red;
 }
