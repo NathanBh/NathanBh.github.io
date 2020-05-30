@@ -1,3 +1,4 @@
+/* makes navigation bar opaque and positions it*/
 #navbar {
     position: fixed;
     width: 100%;
@@ -6,12 +7,12 @@
     left: 0px;
     opacity: 80%;
 }
-
+/* change margin for each list element in the navigation bar*/
 nav li {
     margin-right: 60px;
     margin-left: 60px;
 }
-
+/* adjust display of the unordered list inside the navigation bar to be a flexbox*/
 nav ul {
     padding: 3px 0px 11px 0px;
     margin: auto;
@@ -20,6 +21,9 @@ nav ul {
     justify-content: center;
 }
 
+/*colour navigation bar elements to be white with opacity of 80% 
+while making sure it works on all browsers
+*/
 nav a {
     color: white;
     text-decoration: none;
@@ -29,6 +33,7 @@ nav a {
     -webkit-opacity: 0.8;
 }
 
+/* change opacity on hover for each navigation bar element */
 nav a:hover {
     opacity: 100%;
     -khtml-opacity: 1;
@@ -36,11 +41,13 @@ nav a:hover {
     -webkit-opacity: 1;
 }
 
+/*align padding for h2 headers */
 h2 {
     text-align: center;
     padding-top: 3%;
 }
 
+/* Create grid to hold all projects*/
 #Projects {
     display: grid;
     width: 100%;
@@ -49,6 +56,7 @@ h2 {
     grid-template-rows: repeat(5, auto);
 }
 
+/*sets background for each project*/
 #Project1 {
     background: PaleGreen;
 }
@@ -69,10 +77,12 @@ h2 {
     background: red;
 }
 
+/*align text paragraphs*/
 section p {
     text-align: center;
 }
 
+/*align anchor elements*/
 #a {
     text-align: center;
 }
