@@ -24,10 +24,16 @@ nav a {
     color: white;
     text-decoration: none;
     opacity: 80%;
+    -khtml-opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
 }
 
 nav a:hover {
     opacity: 100%;
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
 }
 
 h2 {
