@@ -5,11 +5,9 @@
     top: 0px;
     left: 0px;
     opacity: 80%;
-
 }
 
 nav li {
-
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -34,28 +32,41 @@ nav a:hover {
 
 h2 {
     text-align: center;
+    padding-top: 3%;
 }
 
-#Projects{
-display: grid;
-width:  100%;
-height: 2000px;
-grid-template-columns: auto-fit;
-grid-template-rows: repeat(5,auto);
+#Projects {
+    display: grid;
+    width: 100%;
+    height: 2000px;
+    grid-template-columns: auto-fit;
+    grid-template-rows: repeat(5, auto);
 }
 
-#Project1{
-    background:PaleGreen;
+#Project1 {
+    background: PaleGreen;
 }
-#Project2{
-    background:orange;
+
+#Project2 {
+    background: orange;
 }
-#Project3{
-    background:purple;
+
+#Project3 {
+    background: purple;
 }
-#Project4{
-    background:blue;
+
+#Project4 {
+    background: blue;
 }
-#Project5{
+
+#Project5 {
     background: red;
+}
+
+section p {
+    text-align: center;
+}
+
+#a {
+    text-align: center;
 }
