@@ -83,6 +83,31 @@ section p {
 }
 
 /*align anchor elements*/
-#a {
+.link {
     text-align: center;
+
+}
+
+article a{
+    color: white;
+    text-decoration: none;
+}
+
+article a:hover{
+    text-decoration: underline;
+}
+
+.project:hover{
+animation-name: fade;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fade{
+0%{
+filter: saturate(100%);
+}    
+100%{
+    filter: saturate(40%);
+}
 }
