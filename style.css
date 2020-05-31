@@ -1,4 +1,5 @@
 /* makes navigation bar opaque and positions it*/
+
 #navbar {
     position: fixed;
     width: 100%;
@@ -6,13 +7,18 @@
     top: 0px;
     left: 0px;
     opacity: 80%;
+    z-index: 2;
 }
+
 /* change margin for each list element in the navigation bar*/
+
 nav li {
     margin-right: 60px;
     margin-left: 60px;
 }
+
 /* adjust display of the unordered list inside the navigation bar to be a flexbox*/
+
 nav ul {
     padding: 3px 0px 11px 0px;
     margin: auto;
@@ -24,6 +30,7 @@ nav ul {
 /*colour navigation bar elements to be white with opacity of 80% 
 while making sure it works on all browsers
 */
+
 nav a {
     color: white;
     text-decoration: none;
@@ -34,6 +41,7 @@ nav a {
 }
 
 /* change opacity on hover for each navigation bar element */
+
 nav a:hover {
     opacity: 100%;
     -khtml-opacity: 1;
@@ -42,12 +50,15 @@ nav a:hover {
 }
 
 /*align padding for h2 headers */
+
 h2 {
     text-align: center;
     padding-top: 3%;
+    opacity: 0;
 }
 
 /* Create grid to hold all projects*/
+
 #Projects {
     display: grid;
     width: 100%;
@@ -57,6 +68,7 @@ h2 {
 }
 
 /*sets background for each project*/
+
 #Project1 {
     background: PaleGreen;
 }
@@ -78,36 +90,67 @@ h2 {
 }
 
 /*align text paragraphs*/
+
 section p {
     text-align: center;
+    opacity: 0;
 }
 
 /*align anchor elements*/
+
 .link {
     text-align: center;
-
 }
 
-article a{
+article a {
     color: white;
     text-decoration: none;
+    opacity: 0;
 }
 
-article a:hover{
+article a:hover {
     text-decoration: underline;
 }
 
-.project:hover{
-animation-name: fade;
-animation-duration: 0.5s;
-animation-fill-mode: forwards;
+/*fade animation for project tiles*/
+
+.project:hover {
+    animation-name: fade;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes fade{
-0%{
-filter: saturate(100%);
-}    
-100%{
-    filter: saturate(40%);
+@keyframes fade {
+    0% {
+        filter: saturate(100%);
+    }
+    100% {
+        filter: saturate(75%);
+    }
 }
+
+/*text fade in animations*/
+
+.project:hover a {
+    animation-name: reveal;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.project:hover p {
+    animation-name: reveal;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.project:hover h2 {
+    animation-name: reveal;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    100% {
+        opacity: 100;
+    }
 }
